@@ -1,0 +1,122 @@
+/* 1. Impor Font Montserrat (Elegan) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* 2. Pengaturan Dasar Body (Background Bintang) */
+body {
+    /* LATAR BELAKANG: Pastikan file 'stars-background.jpg' ada di folder Anda */
+    background: #000;
+    background-image: url('stars-galaxy-3840x2160-10307.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    color: white;
+    font-family: 'Montserrat', sans-serif; /* Menggunakan font Montserrat */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* 3. Gaya Profil */
+.profile-pic {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid red; /* Ganti 'red' dengan warna border yang diinginkan */
+    margin-bottom: 10px;
+    object-fit: cover; /* Penting agar foto tidak terdistorsi */
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+.bio {
+    font-size: 1em;
+    opacity: 0.8;
+    margin-bottom: 30px; /* Jarak antara bio dan tombol pertama */
+}
+
+/* 4. Gaya Tautan Utama (Card) */
+.main-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 15px auto; /* auto untuk senter horizontal */
+    width: fit-content; /* Agar card tidak selebar container */
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15); /* Latar belakang semi-transparan */
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s;
+}
+
+.main-link:hover {
+    /* 1. Efek Background: Sedikit lebih terang (sudah ada di kode sebelumnya) */
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    /* 2. Efek Scale: Tombol sedikit membesar */
+    transform: scale(1.05); /* Membesar 5% */
+    
+    /* 3. Efek Shadow: Menambah bayangan halus */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+}
+
+.link-pic {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.link-text {
+    font-weight: 600;
+}
+
+/* 5. Gaya Ikon Sosial Media */
+.social-icons {
+    margin-top: 80px; /* MENURUNKAN ICON: Memberi jarak dari card di atasnya */
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antar ikon */
+}
+
+.social-icons a {
+    color: white;
+    font-size: 35px; /* Ukuran ikon */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #e5e5e5;
+}
+
+/* 6. Gaya Viewer Count */
+.viewer-count {
+    margin-top: 70px; /* MENURUNKAN MATA: Memberi jarak dari ikon sosial */
+    font-size: 0.8em;
+    opacity: 0.7;
+}
+.main-link {
+    /* ... properti sebelumnya ... */
+    background-color: rgba(255, 255, 255, 0.15); 
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+    /* TAMBAHKAN INI: Transisi 0.3 detik untuk semua properti yang berubah */
+    transition: all 0.3s ease; 
+}
